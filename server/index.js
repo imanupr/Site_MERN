@@ -10,8 +10,10 @@ app.use(express.json())
 app.use(cookieparser())
 
 app.use(cors({
-    origin: '*',
-}))
+    origin: 'https://site-mernfrontend.vercel.app', // your frontend URL
+    methods: 'GET,POST', // you can specify allowed HTTP methods
+    credentials: true // if you're sending cookies or headers
+  }));
 
 mongoose.connect(process.env.MONGO_URL).then((res)=>{
     console.log("DB Connection successfull");
