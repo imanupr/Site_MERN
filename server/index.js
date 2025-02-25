@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(cookieparser())
 
 app.use(cors({
-    origin: 'https://site-mernfrontend.vercel.app', // your frontend URL
+    origin: 'https://site-mernbackend.vercel.app/api/v1/products/listproducts', // your frontend URL
     methods: 'GET,POST', // you can specify allowed HTTP methods
     credentials: true // if you're sending cookies or headers
   }));
