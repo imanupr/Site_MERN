@@ -10,9 +10,7 @@ app.use(express.json())
 app.use(cookieparser())
 
 app.use(cors({
-    origin:'https://site-mernfrontend.vercel.app',
-    methods: 'GET,POST,DELETE',
-    credentials:true
+    origin: '*',
 }))
 
 mongoose.connect(process.env.MONGO_URL).then((res)=>{
