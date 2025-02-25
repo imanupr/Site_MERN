@@ -11,6 +11,7 @@ app.use(cookieparser())
 
 app.use(cors({
     origin:'https://site-mernfrontend.vercel.app',
+    methods: 'GET,POST,DELETE',
     credentials:true
 }))
 
