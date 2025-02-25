@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(cookieparser())
 
 app.use(cors({
-    origin:'https://site-mernfrontend.vercel.app/',
+    origin:'https://site-mernfrontend.vercel.app',
     credentials:true
 }))
 
