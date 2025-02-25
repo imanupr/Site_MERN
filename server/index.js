@@ -9,7 +9,7 @@ const app = express();
 
 // Use CORS before routes
 app.use(cors({
-  origin: 'https://site-mernfrontend.vercel.app', // Correct frontend URL (without '/api/v1/products/listproducts')
+  origin: 'https://site-mernbackend.vercel.app', // Correct frontend URL (without '/api/v1/products/listproducts')
   methods: 'GET, POST, PUT, DELETE', // Allowed HTTP methods
   credentials: true, // Allow cookies and headers
 }));
