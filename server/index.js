@@ -8,9 +8,16 @@ require('dotenv').config();
 const app = express();
 
 // Use CORS before routes
-axios.get('https://site-mernserver.vercel.app/api/v1/products/listproducts', {
-    withCredentials: true,  // Include cookies in the request
-  })
+
+
+
+const corsOptions = {
+    origin: 'https://site-mernclientside.vercel.app',  // Correct frontend URL without the trailing '/'
+    methods: 'GET, POST, PUT, DELETE',
+    credentials: true,
+  };
+  
+  app.use(cors(corsOptions)); // Apply CORS options globally
   
 
 // Use other middleware
