@@ -12,7 +12,7 @@ const app = express();
 
 
 const corsOptions = {
-    origin: 'https://site-mernclientside.vercel.app',  // Correct frontend URL without the trailing '/'
+    origin: 'https://site-mern-client.vercel.app',  // Correct frontend URL without the trailing '/'
     methods: 'GET, POST, PUT, DELETE',
     credentials: true,
   };
