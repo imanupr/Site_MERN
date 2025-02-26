@@ -18,7 +18,9 @@ const corsOptions = {
   };
   
   app.use(cors(corsOptions)); // Apply CORS options globally
-  
+  // Handling OPTIONS request
+app.options('*', cors());
+
 
 // Use other middleware
 app.use(express.json());
